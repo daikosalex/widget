@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="calendar-header">
+            <button class="prev-month"></button>
+            <h1>January 2024</h1>
+            <button class="cancel">x</button>
+        </div>
+        <table class="calendar-table">
+            <thead>
+                <tr>
+                    <th style="background-color: rgba(241,241,241,255);">Mo</th>
+                    <th style="background-color: rgba(241,241,241,255)">Tu</th>
+                    <th style="background-color: rgba(241,241,241,255);">We</th>
+                    <th style="background-color: rgba(241,241,241,255);">Th</th>
+                    <th style="background-color: rgba(241,241,241,255);">Fr</th>
+                    <th style="background-color: rgba(241,241,241,255);">Sa</th>
+                    <th style="background-color: rgba(241,241,241,255);">Su</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="white-cell">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr class="white-cell">
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td class="white-cell">15</td>
+                    <td class="white-cell" >16</td>
+                    <td class="white-cell" >
+                        <span class="top-text" >17</span>
+                        <span class="bottom-text"></span>
+                    </td>
+                    <!-- <td style="background-color: rgba(69,212,131,255); color: white;">18</td> -->
+                    <td class="price-cell" style="background-color: rgba(69,212,131,255);  color: white;">
+                        <span class="top-text" >18</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(69,212,131,255);  color: white;">
+                        <span class="top-text" >19</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >20</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >21</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >22</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td style="background-color: rgba(255,0,0,255); color: white;">23</td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >24</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >25</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >26</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >27</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >28</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                </tr>
+                <tr class="yellow">
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >29</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(241,241,241,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >30</span>
+                        <span class="bottom-text">£179</span>
+                    </td>
+                    <td class="price-cell" style="background-color: rgba(255,198,0,255);  color: rgb(0, 0, 0);">
+                        <span class="top-text" >31</span>
+                        <span class="bottom-text" style="font-size: 22px;">🅘</span>
+                    </td>
+                   
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <div class="flex-container">
+                <div class="black-box"></div>
+                <p>Selected Dates</p>
+                <div class="grey-box"></div>
+                <p>Rooms Are Available</p>
+                <div class="red-box"></div>
+                <p>No Availability</p>
+            </div>
+            <div class="flex-container">
+                <div class="half-grey-box"></div>
+                <p>No Arrival</p>
+                <div class="orange-box" style="font-size: 20px;">🅘</div>
+                <p>Change Rooms</p>
+                <div class="no-box"></div>
+                <p class="no-text">Change Rooms</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <p>Rooms</p>
+                <div style="display: flex;">
+                    <button style="background-color: transparent; border: none;">-</button>
+                    <p>10</p>
+                    <button style="background-color: transparent; border: none;">+</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <p>Adults</p>
+                <div style="display: flex;">
+                    <button style="background-color: transparent; border: none;">-</button>
+                    <p>10</p>
+                    <button style="background-color: transparent; border: none;">+</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <p>Children</p>
+                <div style="display: flex;">
+                    <button style="background-color: transparent; border: none;">-</button>
+                    <p>10</p>
+                    <button style="background-color: transparent; border: none;">+</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <p>Promo Code</p>
+                <p>-------</p>
+            </div>
+        </div>
+        <div style="display: flex;  align-items: center; justify-content: space-around;" >
+            <p>Modify or Cancel a Reservation</p>
+            <button class="search" >Search</button>
+        </div>
+    </div>
+</body>
+</html>
